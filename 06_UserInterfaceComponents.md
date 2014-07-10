@@ -1,6 +1,6 @@
-﻿# 5. User Interface Components
+﻿# 6. User Interface Components
 
-#### [5.1. ](https://vaadin.com/book/vaadin6/-/page/components.html#components.overview)General
+#### 6.1. General
 
 A component is a visual item on the screen. A component can be a button, a textfield or some more complex item like a panel which contains other components.
 
@@ -46,11 +46,11 @@ Choice: component tagname
 
 `o`        Value: attribute of the element
 
-[5.2. Interfaces and Abstractions](https://vaadin.com/book/vaadin6/-/page/components.interfaces.html)
+#### 6.2. Interfaces and Abstractions
 
-[5.3. Common Component Features](https://vaadin.com/book/vaadin6/-/page/components.features.html)
+#### 6.3. Common Component Features
 
-#### 5.4. Label
+#### 6.4. Label
 
 Displays a single-line of noneditable text.
 
@@ -182,7 +182,7 @@ If false, the component is hidden.
 
  
 
-#### 5.5. Link
+#### 6.5 Link
 
 Looks like a label which is rendered like a hyperlink.
 
@@ -310,7 +310,7 @@ If false, the component is hidden.
 </table>
 
 
-#### 5.6. TextArea
+#### 6.6. TextArea
 
 Displays a multi-line text frame which can be optionally editable. 
 
@@ -488,7 +488,7 @@ Indicates the entered text.</td>
 
  
 
-#### 5.7. TextField
+#### 6.7. TextField
 
 Displays a single-line text that is optionally editable. 
 
@@ -772,7 +772,7 @@ Lets you use a regular expression to validate the entered text.</td>
 </table>
 
 
-#### 5.8. Password
+#### 6.8. Password
 
 Does not display entered text, instead, each text character entered will appear as a bullet.
 
@@ -950,7 +950,7 @@ Indicates the entered text.</td>
 
            
 
-#### Slider
+#### 6.9 Slider
 
 Lets the user select a value by moving a slider thumb between the start and end points of a slider track. The slider track is setup according to the min-ticks and max-ticks attributes.
 
@@ -1112,7 +1112,7 @@ Indicates the value which is between the min and max ticks.</td>
 </table>
 
 
-[5.10. Date and Time Input with ](https://vaadin.com/book/vaadin6/-/page/components.datefield.html)[DateField](https://vaadin.com/book/vaadin6/-/page/components.datefield.html)
+#### 6.10. Date and Time Input with DateField
 
 #### Dropdown
 
@@ -1361,7 +1361,7 @@ Multiple style properties can be added, as long as they are separated by the sem
 </table>
 
 
-#### 5.11. Button
+#### 6.11. Button
 
 Is a commonly used rectangular button which can trigger a click event. It can have a text, specified by the *displayname* attribute.
 
@@ -1501,7 +1501,7 @@ If false, the component is hidden.
 </table>
 
 
-#### 5.12. CheckBox
+#### 6.12. CheckBox
 
 #### **Checkbox**
 
@@ -1659,7 +1659,7 @@ If false, the component is hidden.
 </table>
 
 
-#### Choice
+#### 6.13. Choice
 
 Lets the user makes a single choice within a set of mutually exclusive choices.
 
@@ -1934,7 +1934,7 @@ If false, the single choice is hidden.
 
  
 
-#### Map
+#### 6.14. Map
 
 #### **Map**
 
@@ -2131,7 +2131,7 @@ The possible values are:
 
  
 
-#### 5.13. Listbox
+#### 6.15. Listbox
 
 Displays a vertical list of items. The user can select one or more items from the list at the same time, specified by the *`multiple-selec*t` attribute.
 
@@ -2293,7 +2293,7 @@ Compose a list by defining one or more item elements.</td>
 </table>
 
 
-#### 5.16. Menu-definition
+#### 6.16. Menu-definition
 
 Defines a horizontal, top-level menu that contains one or more submenu items.
 
@@ -2460,7 +2460,7 @@ Indicates a horizontal line between two menu items.</td>
 </table>
 
 
-#### Toolbar
+#### 6.17. Toolbar
 
 #### **Toolbar-Definition**
 
@@ -2631,7 +2631,7 @@ Multiple style properties can be added, as long as they are separated by the sem
 </table>
 
 
-#### HTML
+#### 6.18. HTML
 
 #### **HTML**
 
@@ -2782,7 +2782,7 @@ HTML formatted text can be specified within this element.</td>
 
  
 
-#### Image
+#### 6.19. Image
 
 Lets you display image files, like JPG, PNG or GIF, at runtime, by defining the *location* attribute.
 
@@ -2910,7 +2910,7 @@ If false, the component is hidden.
 
  
 
-#### Hidden
+#### 6.20. Hidden
 
 Is an invisible component for storing hidden values.
 
@@ -2966,7 +2966,7 @@ The ID should be unique within a Window component.
 </table>
 
 
-#### 5.17. Frame
+#### 6.21. Frame
 
 Is used to show (external) web pages by defining the *src* attribute.
 
@@ -3068,7 +3068,7 @@ If false, the component is hidden.
 
  
 
-#### 5.18. FileUpload
+#### 6.22. FileUpload
 
 Lets the user upload a file to the server for processing.
 
@@ -3192,7 +3192,7 @@ If false, the component is hidden.
 
 Referencing the id of the fileupload component will fetch a Map object containing the byte array of the file content, the name of the file and the mime-type. In the desired service class to which the Map object is passed, use the key *filecontent, filename *and *mime-type *to get respective data from related to the uploaded file.
 
-#### 5.19. Panel
+#### 6.23. Panel
 
 Contains one or more child components (aka container). Therefore, it must have a layout to align its children.
 
@@ -3368,11 +3368,11 @@ If false, the component is hidden. The child components will also have the same 
 
  
 
-##### Layout elements
+##### 6.24. Layout elements
 
 ** **
 
-###### horizontallayout
+###### 6.24.1. horizontallayout
 
 Lays out components in a single horizontal row.
 
@@ -3398,7 +3398,7 @@ Example:
 
 ** **
 
-###### verticallayout
+###### 6.24.2. verticallayout
 
 Lays out components in a single vertical column.
 
@@ -3424,7 +3424,7 @@ Example:
 
 **_ _**
 
-###### gridlayout
+###### 6.24.3. gridlayout
 
 Arranges components as rows and columns.
 
@@ -3498,7 +3498,7 @@ Attributes of **_element_** element:
 
 ** **
 
-###### borderlayout
+###### 6.24.4. borderlayout
 
 Arranges components to the five regions: north, south, east, west, and center.
 
@@ -3550,7 +3550,7 @@ Example:
 
 ** **
 
-###### absolutelayout
+###### 6.24.5. absolutelayout
 
 Lets you specify the position of components using the *x* and *y* attributes of each *element* element.
 
@@ -3612,7 +3612,7 @@ Attributes of **_element_** element:
 
  
 
-###### autolayout
+###### 6.24.6. autolayout
 
 Lays out components in a multi vertical columns, specified by the *cols* attribute
 
@@ -3656,7 +3656,7 @@ Attributes:
 
  
 
-####  Panel definition
+####  6.25. Panel definition
 
 Is a reusable Panel component.
 
@@ -3700,7 +3700,7 @@ Example:
 
  `</panel-definition>`
 
-#### Panel ref
+#### 6.26. Panel ref
 
 Refers to a container which is defined as a Panel-Definition component.
 
@@ -3778,7 +3778,7 @@ The ID should be unique within a Window component.
 </table>
 
 
-#### Splitpanel
+#### 6.27. Splitpanel
 
 Lays out its 2 child containers horizontally by default. It inserts a draggable divider in the gap between the children. The user can drag the divider to resize the children on each side. The child containers are defined by the *first* and *second* elements.
 
@@ -3957,7 +3957,7 @@ It contains one component.</td>
 
            	       
 
-#### Stackpanel
+#### 6.28. Stackpanel
 
 Has a collection of child containers, but only one of them at a time is visible. It creates navigator buttons (*displayname* attribute of the *stack* element), which you use to navigate between the children. When the user clicks a navigator button, the associated child container is displayed.
 
@@ -4203,7 +4203,7 @@ If false, the component is hidden.
 
  
 
-#### Tilelist
+#### 6.29. Tilelist
 
 #### **Tilelist**
 
@@ -4378,7 +4378,7 @@ If false, the component is hidden.
 
  
 
-#### 5.20. Table
+#### 6.30. Table
 
 #### **Table**
 
@@ -4832,7 +4832,7 @@ If false, the cell is hidden.
 
  
 
-#### TabPanel
+#### 6.31. TabPanel
 
 Lets you create a horizontal group of tab navigation items. It is composed of one or more Panel components, indicated as tab elements.
 
@@ -4988,7 +4988,7 @@ Indicates as a Panel component.</td>
 
            	            
 
-#### 5.22. Tree
+#### 6.32. Tree
 
 #### **Tree**
 
@@ -5261,7 +5261,7 @@ If false, the tree item is hidden.
 
  
 
-#### Window
+#### 6.33. Window
 
 #### **Window**
 
@@ -5487,7 +5487,7 @@ Specify the external cascading style sheet for the window.</td>
 
  
 
-#### 5.23. Datagrid
+#### 6.33. Datagrid
 
 #### **Datagrid**
 
@@ -6095,9 +6095,9 @@ In such scenarios the column where the dropdown inner component is defined must 
 
 <set component-id=*"<DATAGRID ID>.<COLUMN ID>"* …./>
 
-### Charting support
+### 6.34. Charting support
 
-#### BarChart
+#### 6.34.1. BarChart
 
 The BarChart component represents data as items of horizontal bars.
 
@@ -6547,7 +6547,7 @@ If false, the chart item is hidden.
 </table>
 
 
-#### ColumnChart
+#### 6.34.2. ColumnChart
 
 The ColumnChart component represents data as items of vertical bars.
 
@@ -6755,7 +6755,7 @@ Specifies a chart item for a chart component.</td>
 </table>
 
 
-#### **LineChart**
+#### 6.34.3. LineChart
 
 The LineChart component represents data items as points connected by a continuous line.
 
@@ -6975,7 +6975,7 @@ Specifies a chart item for a chart component.</td>
 
            	          	          	          	          	            
 
-#### PieChart
+#### 6.34.4. PieChart
 
 The PieChart component represents data items as a standard pie chart. 
 
@@ -7178,7 +7178,7 @@ Specifies a chart item for a chart component.</td>
 
  
 
-#### PlotChart
+#### 6.34.5. PlotChart
 
 The PlotChart component represents data items as points.
 
